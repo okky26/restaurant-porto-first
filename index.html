@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant - Website</title>
+  
+  <script type="module" crossorigin src="/restaurant-porto-first/assets/index-31cfa159.js"></script>
+  <link rel="stylesheet" href="/restaurant-porto-first/assets/index-a3fcc88f.css">
+</head>
+<body class="scroll-smooth overflow-x-hidden">
+  <!-- loader start -->
+  <section id="loader" class="absolute w-full h-full z-20">
+    <div id="loader-white" class="w-full h-full absolute bg-textPrimary flex items-center justify-center clip-bottom transition-transform duration-1000">
+      <img src="data:image/png;base64,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" alt="">
+    </div>
+    <div id="loader-black" class="w-full h-full absolute bg-darkPrimary flex items-center justify-center clip-top transition-transform duration-1000">
+      <img src="/restaurant-porto-first/assets/logo-white-sm-4c17104f.png" alt="">
+    </div>
+  </section>
+
+  <!-- loader end -->
+
+  <!-- header start --> 
+  <header class="sticky top-0 z-10 w-screen h-fit flex items-center justify-between pt-11 px-6 sm:px-12 transition-transform duration-700 sm:pt-4 sm:h-[20vh]">
+    <img id="logo-nav" src="data:image/png;base64,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" alt="logo" class="w-1/3 object-cover ml-auto mr-24 -translate-y-2 opacity-0 sm:ml-0 sm:mr-auto sm:w-1/12">
+    <div id="toggle-open" class="w-fit h-full flex items-center justify-center translate-x-full opacity-0 sm:h-1/2">
+      <div class="w-6 h-6 flex flex-col items-end justify-center gap-y-1 sm:w-6 sm:h-6 sm:gap-y-2">
+        <div class="w-full h-1 rounded-full bg-darkPrimary sm:h-3"></div>
+        <div class="w-2/3 h-1 rounded-full bg-darkPrimary sm:h-3"></div>
+        <div class="w-full h-1 rounded-full bg-darkPrimary sm:h-3"></div>
+      </div>
+    </div>
+  </header>
+  <nav id="nav-menu" class="fixed top-0 -left-full w-full h-[90vh] flex flex-col items-center justify-between pt-11 py-11 px-6 z-[11] bg-darkPrimary transition-transform duration-700 sm:justify-around sm:h-screen sm:pt-8 sm:px-12">
+    <div class="w-full h-fit flex items-center justify-between">
+      <img src="/restaurant-porto-first/assets/logo-white-sm-4c17104f.png" alt="logo" class="w-1/3 object-cover ml-auto mr-24 sm:ml-0 sm:mr-auto sm:w-1/6">
+      <div id="toggle-close" class="w-fit h-full flex items-center justify-center">
+        <div class="relative w-6 h-6 flex items-center justify-center sm:w-8 sm:h-8">
+          <div class="absolute w-full h-1 rounded-full bg-textPrimary rotate-45 sm:h-2"></div>
+          <div class="absolute w-full h-1 rounded-full bg-textPrimary -rotate-45 sm:h-2"></div>
+        </div>
+      </div>
+    </div>
+    <ul id="nav-links" class="w-full flex flex-col items-center justify-between mt-11 sm:flex-row sm:mt-0">
+      <li class="w-full">
+        <a href="#" class="w-full flex justify-center gap-x-3">
+          <p class="text-[64px] font-advent text-textPrimary capitalize underline">vouchers</p>
+          <div id="arrow-icon-1" class="flex items-center justify-center">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-4">
+              <path d="M32.5369 34.0369C33.3653 34.0369 34.0369 33.3653 34.0369 32.5369L34.0369 19.0369C34.0369 18.2084 33.3653 17.5369 32.5369 17.5369C31.7084 17.5369 31.0369 18.2084 31.0369 19.0369L31.0369 31.0369L19.0369 31.0369C18.2084 31.0369 17.5369 31.7084 17.5369 32.5369C17.5369 33.3653 18.2084 34.0369 19.0369 34.0369L32.5369 34.0369ZM0.93934 3.06066L31.4762 33.5975L33.5975 31.4762L3.06066 0.93934L0.93934 3.06066Z" fill="#D9D9D9"/>
+            </svg>              
+          </div>
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex justify-center gap-x-3">
+          <p class="text-[64px] font-advent text-textPrimary capitalize underline">Menus</p>
+          <div id="arrow-icon-2" class="flex items-center justify-center">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-4">
+              <path d="M32.5369 34.0369C33.3653 34.0369 34.0369 33.3653 34.0369 32.5369L34.0369 19.0369C34.0369 18.2084 33.3653 17.5369 32.5369 17.5369C31.7084 17.5369 31.0369 18.2084 31.0369 19.0369L31.0369 31.0369L19.0369 31.0369C18.2084 31.0369 17.5369 31.7084 17.5369 32.5369C17.5369 33.3653 18.2084 34.0369 19.0369 34.0369L32.5369 34.0369ZM0.93934 3.06066L31.4762 33.5975L33.5975 31.4762L3.06066 0.93934L0.93934 3.06066Z" fill="#D9D9D9"/>
+            </svg>              
+          </div>
+        </a>
+      </li>
+    </ul>
+    <section class="w-full flex items-center justify-center mt-20 sm:mt-0">
+      <a href="#" class="relative w-1/2 h-20 py-2 px-10 rounded-full flex items-center justify-center overflow-hidden group border-2 border-textPrimary sm:w-1/2 sm:h-20">
+        <div class="absolute w-full h-full bg-tertier rounded-full -translate-x-full transition-transform duration-500 group-focus:translate-x-0 sm:group-hover:translate-x-0"></div>
+        <p class="absolute text-2xl uppercase font-advent text-textPrimary font-bold transition-colors duration-500 delay-100 group-focus:text-darkPrimary sm:group-hover:text-darkPrimary sm:text-4xl">reserve now</p>
+      </a>
+    </section>
+  </nav>
+  <!-- header end -->
+
+  <!-- main content start -->
+  <main>
+    <!-- Hero -->
+    <section class="w-full h-[95vh] grid grid-cols-2 grid-rows-5 pt-3 gap-2 px-6 sm:grid-cols-3 sm:grid-rows-3 sm:h-[95vh] sm:px-12 lg:h-screen sm:gap-4 sm:py-6">
+      <article class="w-full h-full overflow-hidden flex items-center justify-center rounded-b-xl col-span-2 sm:col-span-1 sm:rounded-b-2xl sm:col-start-2 sm:row-start-1 sm:row-span-2">
+        <img id="hero-img-1" src="/restaurant-porto-first/assets/pic-hero-4758bab3.jpg" alt="hero-pic" class="w-full object-cover -translate-y-full sm:h-full">
+      </article>
+      <article class="w-full h-full flex items-center justify-center col-span-2 row-start-2 sm:col-span-1 sm:col-start-1 sm:row-start-2">
+        <h1 id="hero-header-1" class="font-bebas text-darkPrimary text-7xl -translate-x-2 opacity-0 sm:text-5xl lg:text-8xl">painting on a plate</h1>
+      </article>
+      <article class="w-full h-full flex items-center justify-center row-start-3 sm:col-start-2">
+        <h2 id="hero-header-2" class=" font-bebas text-tertier text-4xl -translate-x-2 opacity-0 sm:text-3xl lg:text-7xl">Highlighting Top Quality Seasonal thai ingredients</h2>
+      </article>
+      <article class="w-full h-full overflow-hidden flex items-center justify-center row-start-3 col-start-2 rounded-tl-xl rounded-bl-xl sm:col-start-1 sm:row-start-1 sm:rounded-b-2xl sm:rounded-t-none">
+        <img id="hero-img-2" src="/restaurant-porto-first/assets/pic-1-b959411b.jpg" alt="hero-pic" class="w-full object-cover translate-x-full">
+      </article>
+      <article class="w-full h-full flex items-center justify-center row-start-4 col-span-2 sm:row-start-2 sm:col-start-3">
+        <h2 id="hero-header-3" class=" font-advent text-darkPrimary text-2xl translate-y-full opacity-0 lg:text-5xl">Highlighting Top Quality Seasonal thai ingredients</h2>
+      </article>
+      <article class="w-full h-full overflow-hidden flex items-center justify-center row-start-5 col-start-1 rounded-tr-xl sm:rounded-b-2xl  sm:col-start-3 sm:row-start-1 sm:rounded-t-none">
+        <img id="hero-img-3" src="/restaurant-porto-first/assets/pic-3-48b71bd0.jpg" alt="hero-pic" class="w-full -translate-x-full object-cover">
+      </article>
+      <a id="hero-button" href="#" class="relative w-full h-full flex items-center justify-center row-start-5 col-start-2 group opacity-0 sm:col-start-3 sm:row-start-3 rounded-full overflow-hidden">
+        <div class="absolute w-full h-full flex items-center justify-around pl-8 sm:justify-center sm:pl-0 sm:gap-x-3 sm:w-1/2 sm:h-1/2">
+          <p class="text-2xl font-bebas text-darkPrimary group-focus:-translate-x-1 transition-transform duration-500 sm:text-lg lg:text-4xl">contact us</p>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAuCAYAAABjwOorAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGaSURBVHgB7dpPToNAFMfxh9h93bRb3HXRPyxdepR6AutJqidAblB3Lj0CCVzAHWGjSzeA82s0bqQJzBveg/SbNKWdWcwnk5AMgegcf0EQTPEhB3kk0GKxCCaTSWQub3/+ekzT9IEYuyCBDGpPfyi0W61WETHW+46FYTgty/KjYfjZ7NwdMSSyYyfacu2cTz2X5/nXbDa78jzvpmFKOJ/Pg6IoXsii3mHILPrVLP7aXIYNU6xxIjBkFn1wiRODIZc4URhyhROHIRc4FTDEjVMDQ5w4VTDEhVMHQxw4lTBki1MLQzY41TDUFacehrrgBgFDbXGeOf/UNK6Oh9VLGl/b5XL5ru0EzZI5xN6PEoZGCavrOh4jLM6ybCfywLRrm80mqqpqe2JKbO6Ix/HBwNqg0CBgbVFIPawLCqmGdUUhtTAbFFIJs0UhdTAOFFIF40IhNTBOFFIB40YhcZgLFBKFuUIhMZhLFBI5tqzX671LFNL21gCyRiFtB00WFOodliTJp/l6+2eIDYVEdsz3fbykcvj9bZ5RPHGi0DcTTSvfLaDLcwAAAABJRU5ErkJggg==" alt="arrow-icon" class="w-1/4 group-focus:translate-x-1 transition-transform duration-500 sm:w-1/12 lg:w-1/6">
+        </div>
+        <div class="w-[90%] h-[30%] z-[-1] rounded-full bg-button scale-x-[.30] ml-auto origin-left transition-transform duration-700 group-focus:scale-100 sm:group-hover:translate-x-0 sm:ml-0 sm:flex sm:items-center sm:justify-center sm:h-1/3 sm:w-1/2 sm:scale-100 sm:translate-x-[75%]"></div>
+      </a>
+    </section>
+    <!-- About -->
+    <section id="about-container" class="w-full h-fit mt-3 px-6 sm:mt-6 sm:px-12">
+      <article id="title-container" class="w-full h-[5vh] flex items-center justify-end border-b-2 border-darkPrimary sm:h-[10vh] origin-right scale-x-0 transition-transform duration-700">
+        <p class="font-bebas text-darkPrimary text-4xl lg:text-6xl">about us</p>
+      </article>
+      <article class="w-full h-[50vh] grid grid-rows-2 gap-3 mt-3 sm:mt-6 sm:grid sm:grid-cols-2 sm:grid-rows-1 lg:gap-x-6">
+        <section class="w-full h-full flex items-center justify-center rounded-r-xl overflow-hidden sm:col-start-2">
+          <img id="about-img" src="/restaurant-porto-first/assets/about-042943ba.jpeg" alt="about-pic" class="w-full sm:rounded-l-2xl translate-x-full transition-transform duration-700">
+        </section>
+        <section class="w-full flex items-center justify-center sm:col-start-1 sm:row-start-1">
+          <p id="about-paragraf" class="font-advent text-darkPrimary text-2xl lg:text-5xl lg:text-justify translate-y-full opacity-0 transition-all duration-700">Canvas serves a 22 course menu highlighting top quality and seasonal Thai ingredients, creatively prepared with our unique sense of artistry.</p>
+        </section>
+      </article>
+    </section>
+    <section class="w-full h-[25vh] flex items-center justify-center overflow-hidden px-6 sm:h-[50vh] sm:mt-6 sm:px-12">
+      <article class="w-full h-fit flex items-center gap-x-3 flex-shrink-0 rotate-12 sm:gap-x-10">
+        <div class="w-full flex items-center justify-center gap-x-3 sm:gap-x-10 animate-slideshow ">
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">food</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">culture</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">lifestyle</p>
+        </div>
+        <div class="w-full flex items-center justify-center gap-x-3 sm:gap-x-10 animate-slideshow delay-[5s]">
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">food</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">culture</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">lifestyle</p>
+        </div>
+        <div class="w-full flex items-center justify-center gap-x-3 sm:gap-x-10 animate-slideshow delay-[10s]">
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">food</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">culture</p>
+          <div class="w-3 h-3 rounded-full bg-darkPrimary sm:w-6 sm:h-6"></div>
+          <p class="font-bebas text-tertier text-4xl lg:text-6xl">lifestyle</p>
+        </div>
+      </article>
+    </section>
+    <!-- Chef -->
+    <section id="chef-container" class="w-full h-fit mt-3 px-6 sm:mt-6 sm:px-12">
+      <article id="title-container" class="w-full h-[5vh] flex items-center justify-start border-b-2 border-darkPrimary sm:h-[10vh] origin-left scale-x-0">
+        <p class="font-bebas text-darkPrimary text-4xl lg:text-6xl">our chef</p>
+      </article>
+      <article class="w-full h-[50vh] grid grid-rows-2 gap-3 mt-3 sm:mt-6 sm:h-screen sm:place-items-center">
+        <p id="paragraf" class="font-advent text-darkPrimary text-2xl sm:row-start-2 lg:text-5xl translate-y-full opacity-0">Using plenty of modern techniques, the dishes on the tasting menus offer a lesson in bold and captivating flavours and vibrant presentation - this is beguiling cooking.</p>
+        <div class="w-full h-full flex items-center justify-center overflow-hidden rounded-l-xl sm:row-start-1 sm:rounded-tl-none sm:rounded-b-2xl">
+          <img id="img" src="/restaurant-porto-first/assets/chef-bf3ab7a5.jpg" alt="chef-pic" class="w-full object-cover aspect-auto -translate-y-full">
+        </div>
+      </article>
+    </section>
+    <section class="sticky top-20 w-full h-[25vh] flex items-center justify-center mt-3 px-6 sm:mt-6 sm:px-12 sm:py-6 sm:h-[50vh] lg:h-[25vh]">
+      <article class=" w-[90%] h-fit flex items-center justify-center border-2 border-darkPrimary rounded-xl py-6 sm:w-1/2 sm:h-full">
+        <p class="font-bebas text-2xl sm:text-4xl lg:text-6xl ">developed since 2019</p>
+      </article>
+    </section>
+    <!-- review -->
+    <section id="review-container" class="relative z-[2] w-full h-[45vh] mt-3 flex flex-col items-center justify-start bg-darkPrimary rounded-t-4xl sm:h-screen lg:h-[45vh]">
+      <article class="w-full h-[15%] flex items-center justify-center border-b-2 border-textPrimary bg-darkPrimary px-6 py-3 rounded-t-4xl sm:px-12">
+        <p class="font-bebas text-textPrimary text-4xl lg:text-6xl">reviews</p>
+      </article>
+      <article class="relative w-full h-[75%] px-6 py-3 flex items-center justify-center bg-darkPrimary">
+        <section  class="w-full h-full flex items-center justify-between overflow-hidden">
+          <div id="slider" class="w-full h-full flex items-center justify-between transition-transform duration-500">
+            <div class="w-full h-full flex flex-col items-center justify-center gap-y-3 flex-shrink-0">
+              <h3 class="font-advent font-bold text-4xl capitalize text-tertier lg:text-6xl">michelin guide</h3>
+              <p class="font-advent text-xl text-center text-textPrimary sm:w-1/2 lg:text-5xl lg:w-1/2">Using plenty of modern techniques, the dishes on the tasting menus offer a lesson in bold and captivating flavours and vibrant presentation - this is beguiling cooking.</p>
+            </div>
+            <div class="w-full h-full flex flex-col items-center justify-center gap-y-3 flex-shrink-0">
+              <h3 class="font-advent font-bold text-4xl capitalize text-tertier lg:text-6xl">michelin</h3>
+              <p class="font-advent text-xl text-center text-textPrimary sm:w-1/2 lg:text-5xl lg:w-1/2">Using plenty of modern techniques, the dishes on the tasting menus offer a lesson in bold and captivating flavours and vibrant presentation - this is beguiling cooking.</p>
+            </div>
+            <div class="w-full h-full flex flex-col items-center justify-center gap-y-3 flex-shrink-0">
+              <h3 class="font-advent font-bold text-4xl capitalize text-tertier lg:text-6xl">michelin art</h3>
+              <p class="font-advent text-xl text-center text-textPrimary sm:w-1/2 lg:text-5xl lg:w-1/2">Using plenty of modern techniques, the dishes on the tasting menus offer a lesson in bold and captivating flavours and vibrant presentation - this is beguiling cooking.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="w-full h-[20%] bg-darkPrimary flex items-center justify-end px-6">
+        <section class="w-1/2 h-full flex items-center justify-end gap-x-6">
+          <button id="prev-btn" type="button" class="w-10 h-10 flex items-center justify-center bg-button rounded-full sm:w-15 sm:h-15 lg:w-20 lg:h-20">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAuCAYAAABjwOorAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGaSURBVHgB7dpPToNAFMfxh9h93bRb3HXRPyxdepR6AutJqidAblB3Lj0CCVzAHWGjSzeA82s0bqQJzBveg/SbNKWdWcwnk5AMgegcf0EQTPEhB3kk0GKxCCaTSWQub3/+ekzT9IEYuyCBDGpPfyi0W61WETHW+46FYTgty/KjYfjZ7NwdMSSyYyfacu2cTz2X5/nXbDa78jzvpmFKOJ/Pg6IoXsii3mHILPrVLP7aXIYNU6xxIjBkFn1wiRODIZc4URhyhROHIRc4FTDEjVMDQ5w4VTDEhVMHQxw4lTBki1MLQzY41TDUFacehrrgBgFDbXGeOf/UNK6Oh9VLGl/b5XL5ru0EzZI5xN6PEoZGCavrOh4jLM6ybCfywLRrm80mqqpqe2JKbO6Ix/HBwNqg0CBgbVFIPawLCqmGdUUhtTAbFFIJs0UhdTAOFFIF40IhNTBOFFIB40YhcZgLFBKFuUIhMZhLFBI5tqzX671LFNL21gCyRiFtB00WFOodliTJp/l6+2eIDYVEdsz3fbykcvj9bZ5RPHGi0DcTTSvfLaDLcwAAAABJRU5ErkJggg==" alt="icon" class="w-1/2 rotate-180">
+          </button>
+          <button id="next-btn" type="button" class="w-10 h-10 flex items-center justify-center bg-button rounded-full sm:w-15 sm:h-15 lg:w-20 lg:h-20">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAuCAYAAABjwOorAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGaSURBVHgB7dpPToNAFMfxh9h93bRb3HXRPyxdepR6AutJqidAblB3Lj0CCVzAHWGjSzeA82s0bqQJzBveg/SbNKWdWcwnk5AMgegcf0EQTPEhB3kk0GKxCCaTSWQub3/+ekzT9IEYuyCBDGpPfyi0W61WETHW+46FYTgty/KjYfjZ7NwdMSSyYyfacu2cTz2X5/nXbDa78jzvpmFKOJ/Pg6IoXsii3mHILPrVLP7aXIYNU6xxIjBkFn1wiRODIZc4URhyhROHIRc4FTDEjVMDQ5w4VTDEhVMHQxw4lTBki1MLQzY41TDUFacehrrgBgFDbXGeOf/UNK6Oh9VLGl/b5XL5ru0EzZI5xN6PEoZGCavrOh4jLM6ybCfywLRrm80mqqpqe2JKbO6Ix/HBwNqg0CBgbVFIPawLCqmGdUUhtTAbFFIJs0UhdTAOFFIF40IhNTBOFFIB40YhcZgLFBKFuUIhMZhLFBI5tqzX671LFNL21gCyRiFtB00WFOodliTJp/l6+2eIDYVEdsz3fbykcvj9bZ5RPHGi0DcTTSvfLaDLcwAAAABJRU5ErkJggg==" alt="icon" class="w-1/2">
+          </button>
+        </section>
+      </article>
+    </section>
+  </main> 
+  <footer id="footer-container" class="w-full h-[75vh] flex flex-col bg-darkPrimary sm:m-0 sm:px-12 sm:py-6 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:border-2 sm:border-darkPrimary sm:gap-6 sm:place-items-center lg:h-[50vh]">
+    <article class="w-full h-1/3 flex flex-col items-center justify-center px-6 sm:gap-y-6 sm:h-full">
+      <img src="/restaurant-porto-first/assets/logo-white-sm-4c17104f.png" alt="logo-white" class="w-1/2 object-cover sm:w-1/3">
+      <button id="back-to-top-btn" type="button" class="w-20 h-20 rounded-full flex items-center justify-center bg-textPrimary sm:w-15 sm:h-15">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAuCAYAAABjwOorAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGaSURBVHgB7dpPToNAFMfxh9h93bRb3HXRPyxdepR6AutJqidAblB3Lj0CCVzAHWGjSzeA82s0bqQJzBveg/SbNKWdWcwnk5AMgegcf0EQTPEhB3kk0GKxCCaTSWQub3/+ekzT9IEYuyCBDGpPfyi0W61WETHW+46FYTgty/KjYfjZ7NwdMSSyYyfacu2cTz2X5/nXbDa78jzvpmFKOJ/Pg6IoXsii3mHILPrVLP7aXIYNU6xxIjBkFn1wiRODIZc4URhyhROHIRc4FTDEjVMDQ5w4VTDEhVMHQxw4lTBki1MLQzY41TDUFacehrrgBgFDbXGeOf/UNK6Oh9VLGl/b5XL5ru0EzZI5xN6PEoZGCavrOh4jLM6ybCfywLRrm80mqqpqe2JKbO6Ix/HBwNqg0CBgbVFIPawLCqmGdUUhtTAbFFIJs0UhdTAOFFIF40IhNTBOFFIB40YhcZgLFBKFuUIhMZhLFBI5tqzX671LFNL21gCyRiFtB00WFOodliTJp/l6+2eIDYVEdsz3fbykcvj9bZ5RPHGi0DcTTSvfLaDLcwAAAABJRU5ErkJggg==" alt="icon" class="w-1/3 object-cover -rotate-90">
+      </button>
+    </article>
+    <article class="w-full h-1/3 flex flex-col items-center justify-center px-6 gap-y-3 sm:h-full">
+      <a href="#" class="w-1/2 h-1/4 flex items-center justify-center rounded-full bg-tertier font-bebas text-darkPrimary text-xl px-2 py-6 sm:px-1 sm:py-3 sm:text-lg lg:text-2xl">
+        reserve now
+      </a>
+      <ul class="w-full flex flex-col items-center justify-center gap-y-3">
+        <li>
+          <a href="#" class="font-bebas text-2xl text-textPrimary sm:text-xl lg:text-2xl">
+            vouchers
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-bebas text-2xl text-textPrimary sm:text-xl lg:text-2xl">
+            menus
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article class="w-full h-1/3 flex items-center justify-center px-6 sm:col-span-2">
+      <p class="font-bebas text-2xl text-textPrimary">copyright by okky @ 2023</p>
+    </article>
+  </footer>
+  <!-- main content end -->
+  
+</body>
+</html>
