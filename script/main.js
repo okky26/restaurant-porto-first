@@ -1,27 +1,30 @@
 // import { animateOnLoad } from "./animate";
 import { togglerOpen, togglerClose} from "./toggler";
 
-// loader animation
-// animateOnLoad(document.querySelector('#loader-black div'),'scale-x-0');
-// animateOnLoad(document.querySelector('#loader-white div'),'scale-x-0');
-// animateOnLoad(document.querySelector('#loader-black'),'translate-x-full');
-// animateOnLoad(document.querySelector('#loader-white'),'-translate-x-full');
-// animateOnLoad(document.querySelector('#text-black'),'-translate-x-full');
-// animateOnLoad(document.querySelector('#text-white'),'translate-x-full');
-// animateOnLoad(document.querySelector('#text-black'),'sm:-translate-x-[200%]');
-// animateOnLoad(document.querySelector('#text-white'),'sm:translate-x-[200%]');
-// animateOnLoad(document.querySelector('#text-black'),'lg:-translate-x-[300%]');
-// animateOnLoad(document.querySelector('#text-white'),'lg:translate-x-[300%]');
-
-// hide loader after finished animation
-// window.addEventListener('load', function(){
-//     setTimeout(function(){
-//         document.querySelector('#loader').classList.add('hidden')
-//     },1000);
-// });
+// get window height
+const windowHeight = window.innerHeight;
+// made function for animating on scroll
+const animateOnscroll = (target, targetInView, targetOutView, classTarget) =>{
+    // if target is in view based on half of the viewport and if it scrolled back to view
+    if(targetInView <= windowHeight / 2){
+        target.classList.add(classTarget)
+    // if target was out of view based on bottom position to top viewport
+    }if (targetOutView <= 0){
+        target.classList.remove(classTarget)
+    }if (scrollY === 0){
+        target.classList.remove(classTarget)
+    }else {return}
+}
 
 // hero animate on load
 window.addEventListener('load', function(){
+    // loader
+    document.querySelector('#loader-white').classList.add('-translate-x-full');
+    document.querySelector('#loader-black').classList.add('translate-x-full');
+    setTimeout(function(){
+        document.querySelector('#loader').classList.add('hidden')
+    },1500)
+
     // logo
     document.querySelector('#logo-nav').classList.add('animate-fade-up');
     document.querySelector('#toggle-open').classList.add('animate-fade-left');
@@ -45,10 +48,26 @@ window.addEventListener('load', function(){
    
 })
 
-// get scroll position
+
 window.addEventListener('scroll',function(){
+    
+// get scroll position
     const scrollY = window.scrollY
-    scrollNav(scrollY);
+// change nav style based on scrolling
+    scrollNav(scrollY)
+// get element position
+    let aboutTopPosition = document.querySelector('#about-container').getBoundingClientRect().top
+    let aboutBotPosition = document.querySelector('#about-container').getBoundingClientRect().bottom
+    let chefTopPosition = document.querySelector('#chef-container').getBoundingClientRect().top
+    let chefBotPosition = document.querySelector('#chef-container').getBoundingClientRect().bottom
+// call the function
+    animateOnscroll(document.querySelector('#about-container #title-container'),aboutTopPosition,aboutBotPosition,'animate-scale-left')
+    animateOnscroll(document.querySelector('#about-container #about-img'),aboutTopPosition,aboutBotPosition,'animate-fade-left')
+    animateOnscroll(document.querySelector('#about-container #about-paragraf'),aboutTopPosition,aboutBotPosition,'animate-fade-up')
+    animateOnscroll(document.querySelector('#chef-container #title-container'),chefTopPosition,chefBotPosition,'animate-scale-right')
+    animateOnscroll(document.querySelector('#chef-container #img'),chefTopPosition,chefBotPosition,'animate-fade-down')
+    animateOnscroll(document.querySelector('#chef-container #paragraf'),chefTopPosition,chefBotPosition,'animate-fade-up')
+
 })
 
 // scroll to top

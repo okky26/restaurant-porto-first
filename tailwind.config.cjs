@@ -44,7 +44,15 @@ module.exports = {
         'fade-in' : {
           'from' : {opacity : 0},
           'to' : {opacity : 1}
-        }
+        },
+        'scale-left' : {
+          'from' : {transform : 'scaleX(0)'},
+          'to' : {transform : 'scaleX(1)'}
+        },
+        'scale-right' : {
+          'from' : {transform : 'scaleX(0)'},
+          'to' : {transform : 'scaleX(1)'}
+        },
       },
       animation : {
         slideshow : 'slideshow 5s linear infinite',
@@ -52,7 +60,9 @@ module.exports = {
         'fade-down' : 'fade-down .7s linear forwards',
         'fade-left' : 'fade-left .7s linear forwards',
         'fade-right' : 'fade-right .7s linear forwards',
-        'fade-in' : 'fade-in .7s linear forwards'
+        'fade-in' : 'fade-in .7s linear forwards',
+        'scale-left' : 'scale-left .7s linear forwards',
+        'scale-right' : 'scale-right .7s linear forwards'
       }
     },
   },
